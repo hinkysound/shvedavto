@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Russo One', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
