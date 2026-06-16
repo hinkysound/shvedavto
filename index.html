@@ -14,7 +14,7 @@
     <div class="w-full h-screen bg-[url(photos/hero_bg.png)] bg-cover bg-center flex flex-col">
 
       <header class="bg-[#1E3A8A]/74 h-20">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex flex-row items-center justify-around">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex flex-row items-center justify-between">
           <div>
             <img src="photos/SHVEDAVTO_logo.svg" class="w-50 h-10">
           </div>
@@ -49,10 +49,91 @@
 
     <!-- ПОЧЕМУ SHVEDAVTO -->
     <div id="about" class="h-140 flex flex-col items-center">
-      <p class="font-display text-[64px] text-[#1D4ED8] m-8">Почему SHVEDAVTO</p>
+      <p class="font-display text-[64px] text-[#1D4ED8] m-8">Почему <font class="text-[#FACC15] stroke-cyan-800">SHVEDAVTO</font></p>
+      <div class="max-w-7xl w-full h-[52%] flex justify-around">
+        <div class="w-55 flex flex-col justify-between">
+          <img src="photos/gears.svg" class="w-23 h-23 my-[10%] ">
+          <p class="font-body text-2xl font-extrabold text-[#0F172A]">Индивидуальная настройка</p>
+          <hr class="w-23">
+          <p class="font-body font-regular text-[#64748B] text-xl">Под ваш двигатель, не шаблонное решение</p>
+        </div>
+        <div class="w-55 flex flex-col justify-between">
+          <img src="photos/stopwatch.svg" class="w-23 h-23 my-[10%] ">
+          <p class="font-body text-2xl font-extrabold text-[#0F172A]">Прошивка за 1-2 часа </p>
+          <hr class="w-23">
+          <p class="font-body font-regular text-[#64748B] text-xl">Не оставляйте машину на несколько дней </p>
+        </div>
+        <div class="w-55 flex flex-col justify-between">
+          <img src="photos/shield.svg" class="w-23 h-23 my-[10%] ">
+          <p class="font-body text-2xl font-extrabold text-[#0F172A]">Гарантия на результат</p>
+          <hr class="w-23">
+          <p class="font-body font-regular text-[#64748B] text-xl">Исправим, если что-то пойдёт не так</p>
+        </div>
+        <div class="w-64 flex flex-col justify-between">
+          <img src="photos/save.svg" class="w-23 h-23 my-[10%] ">
+          <p class="font-body text-2xl font-extrabold text-[#0F172A]">Сохраняем заводскую прошивку </p>
+          <hr class="w-23">
+          <p class="font-body font-regular text-[#64748B] text-xl">Всегда можно вернуть к стоку </p>
+        </div>
+      </div>
     </div>
     
+    <!-- КАКИЕ ДВИГАТЕЛИ ПРОШИВАЕМ -->
+    <div id="engines" class="h-200 flex flex-col items-center bg-[#1E3A8A]">
+        <p class="font-display text-[#ffffff] text-[64px] m-8">Какие двигатели прошиваем</p>
+        <div class="max-w-7xl w-full flex-1 h-[62%] flex justify-between mb-16">
+          <div class="w-[29%] flex flex-col justify-around">
+            <img src="photos/engine-1.png" class="h-[67%]">
+            <p class="font-body font-extrabold text-[#ffffff] text-2xl">Бензиновые атмосферные</p>
+            <p class="font-body font-regular text-[#8A97A8] text-xl">Более живой отклик педали газа, бодрый разгон, раскрытие потенциала мотора без турбины</p>
+          </div>
+          <div class="w-[29%] flex flex-col justify-around">
+            <img src="photos/engine-2.png" class="h-[67%]">
+            <p class="font-body font-extrabold text-[#ffffff] text-2xl">Бензиновые турбо</p>
+            <p class="font-body font-regular text-[#8A97A8] text-xl">Максимум от вашего турбодвигателя: прирост мощности и момента при сохранении ресурса</p>
+          </div>
+          <div class="w-[29%] flex flex-col justify-around">
+            <img src="photos/engine-3.png" class="h-[67%]">
+            <p class="font-body font-extrabold text-[#ffffff] text-2xl">Дизельные двигатели</p>
+            <p class="font-body font-regular text-[#8A97A8] text-xl">Больше крутящего момента для уверенных обгонов, экономичнее расход топлива</p>
+          </div>
+        </div>
+    </div>
+    
+    <!-- УРОВНИ ДОРАБОТКИ -->
+    <div id="levels" class="h-225 flex flex-col items-center justify-around">
+      <p class="font-display text-[#1D4ED8] text-[64px] m-8">Уровни доработки</p>
+      <div class="max-w-7xl w-full h-[64%] flex flex-col">
+        <div class="w-[75%] h-1/3 bg-[#0E2566] flex flex-col justify-center">
+          <div class="flex justify-between items-center px-8">
+            <p class="font-display text-white text-[64px] leading-none">STAGE 1</p>
+            <p class="font-body font-extrabold text-[#FACC15] text-[32px] self-start">+20%</p>
+          </div>
+          <p class="font-body text-white text-xl px-8">Перепрошивка без вмешательства в железо. Бодрый отклик и динамика</p>
+        </div>
+        <div class="w-[75%] h-1/3 bg-[#1A41AF] self-center flex flex-col justify-center">
+            <div class="flex justify-between items-center px-8">
+            <p class="font-display text-white text-[64px] leading-none">STAGE 2</p>
+            <p class="font-body font-extrabold text-[#FACC15] text-[32px] self-start">+35%</p>
+          </div>
+          <p class="font-body text-white text-xl px-8">Прошивка с доработкой впуска и выпуска для большего прироста</p>
+        </div>
+        <div class="w-[75%] h-1/3 bg-[#1D4ED8] self-end flex flex-col justify-center">
+            <div class="flex justify-between items-center px-8">
+            <p class="font-display text-white text-[64px] leading-none">STAGE 3</p>
+            <p class="font-body font-extrabold text-[#FACC15] text-[32px] self-start">+50%</p>
+          </div>
+          <p class="font-body text-white text-xl px-8">Замена турбины, валов и комплексные доработки двигателя</p>
+        </div>
+      </div>
+      <p class="font-body font-light text-[#8A97A8] text-[24px] mb-6">* Прирост зависит от модели двигателя. Точные цифры — после диагностики</p>
+    </div>
 
+    <!-- КАЛЬКУЛЯТОР -->
+    <div id="calculator" class="h-237 bg-[#1E3A8A]">
+
+    </div>
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
