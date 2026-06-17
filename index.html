@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>SHVEDAVTO</title>
   </head>
   <body>
@@ -45,7 +45,6 @@
       </div>
 
     </div>
-    <!-- /HERO -->
 
     <!-- ПОЧЕМУ SHVEDAVTO -->
     <div id="about" class="h-140 flex flex-col items-center">
@@ -53,27 +52,31 @@
       <div class="max-w-7xl w-full h-[52%] flex justify-around">
         <div class="w-55 flex flex-col justify-between">
           <img src="photos/gears.svg" class="w-23 h-23 my-[10%] ">
+          <hr class="border-0 border-t border-[#0F172A]">
           <p class="font-body text-2xl font-extrabold text-[#0F172A]">Индивидуальная настройка</p>
-          <hr class="w-23">
           <p class="font-body font-regular text-[#64748B] text-xl">Под ваш двигатель, не шаблонное решение</p>
+          <hr class=" border-0 border-t border-[#0F172A]">
         </div>
         <div class="w-55 flex flex-col justify-between">
           <img src="photos/stopwatch.svg" class="w-23 h-23 my-[10%] ">
+          <hr class="border-0 border-t border-[#0F172A]">
           <p class="font-body text-2xl font-extrabold text-[#0F172A]">Прошивка за 1-2 часа </p>
-          <hr class="w-23">
           <p class="font-body font-regular text-[#64748B] text-xl">Не оставляйте машину на несколько дней </p>
+          <hr class=" border-0 border-t border-[#0F172A]">
         </div>
         <div class="w-55 flex flex-col justify-between">
           <img src="photos/shield.svg" class="w-23 h-23 my-[10%] ">
+          <hr class="border-0 border-t border-[#0F172A]">
           <p class="font-body text-2xl font-extrabold text-[#0F172A]">Гарантия на результат</p>
-          <hr class="w-23">
           <p class="font-body font-regular text-[#64748B] text-xl">Исправим, если что-то пойдёт не так</p>
+          <hr class=" border-0 border-t border-[#0F172A]">
         </div>
         <div class="w-64 flex flex-col justify-between">
           <img src="photos/save.svg" class="w-23 h-23 my-[10%] ">
+          <hr class="border-0 border-t border-[#0F172A]">
           <p class="font-body text-2xl font-extrabold text-[#0F172A]">Сохраняем заводскую прошивку </p>
-          <hr class="w-23">
           <p class="font-body font-regular text-[#64748B] text-xl">Всегда можно вернуть к стоку </p>
+          <hr class=" border-0 border-t border-[#0F172A]">
         </div>
       </div>
     </div>
@@ -102,7 +105,7 @@
     
     <!-- УРОВНИ ДОРАБОТКИ -->
     <div id="levels" class="h-225 flex flex-col items-center justify-around">
-      <p class="font-display text-[#1D4ED8] text-[64px] m-8">Уровни доработки</p>
+      <p class="font-display text-[#1D4ED8] text-[64px] mt-8">Уровни доработки</p>
       <div class="max-w-7xl w-full h-[64%] flex flex-col">
         <div class="w-[75%] h-1/3 bg-[#0E2566] flex flex-col justify-center">
           <div class="flex justify-between items-center px-8">
@@ -130,10 +133,115 @@
     </div>
 
     <!-- КАЛЬКУЛЯТОР -->
-    <div id="calculator" class="h-237 bg-[#1E3A8A]">
+    <div id="calculator">
+      <div id="form" class="h-74 bg-[#1E3A8A] flex flex-col items-center justify-center gap-8">
+        <p class="font-display text-white text-[64px]">Калькулятор</p>
+        <div class="max-w-7xl w-full h-16 flex items-center justify-between">
+          <select id="brand" name="brand" class="h-full w-[23%] border border-white font-body font-light text-white text-[32px] rounded-[13px] pl-4 cursor-pointer">
+            <option value="">Марка</option>
+            <option value="bmw">BMW</option>
+            <option value="kia">Kia</option>
+            <option value="audi">Audi</option>
+          </select>
 
+          <select id="model" name="model" class="h-full w-[23%] border border-white font-body font-light text-white text-[32px] rounded-[13px] pl-4 cursor-pointer">
+            <option value="">Модель</option>
+            <option value="m5">M5</option>
+            <option value="sportage">Sportage</option>
+            <option value="a5">A5</option>
+          </select>
+
+          <select id="year" name="year" class="h-full w-[23%] border border-white font-body font-light text-white text-[32px] rounded-[13px] pl-4 cursor-pointer">
+            <option value="">Год</option>
+            <option value="2011-2016">2011-2016</option>
+            <option value=">2016">2016 и позже</option>
+            <option value="2007-2011">2007-2011</option>
+          </select>
+
+          <select id="engine" name="engine" class="h-full w-[23%] border border-white font-body font-light text-white text-[32px] rounded-[13px] pl-4 cursor-pointer">
+            <option value="">Двигатель</option>
+            <option value="f10 560 ls">F10 560 л.с.</option>
+            <option value="2.0 diesel 136 ls">2.0 Diesel 136 л.с.</option>
+            <option value="3.2 fsi 250 ls">3.2 FSI 250 л.с.</option>
+          </select>
+        </div>
+      </div>
+      <div id="result" class="flex flex-col items-center bg-[#E2E9FF]">
+        <p class="font-display text-black text-[40px] py-8">Чип-тюнинг Kia Sportage 2.0 Diesel 136 л.с.</p>
+        <table>
+          <thead>
+            <th class="p-12 font-body font-extrabold text-2xl text-center">Параметр</th>
+            <th class="p-12 font-body font-normal text-2xl text-center">Мощность (л.с.)</th>
+            <th class="p-12 font-body font-normal text-2xl text-center">Крутящий момент (н*м)</th>
+            <th class="p-12 font-body font-normal text-2xl text-center">Разгон 0-100 км/ч (сек)</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-12 font-body font-extrabold text-2xl text-center">Сток</td>
+              <td class="p-12 font-body font-normal text-2xl text-center">136</td>
+              <td class="p-12 font-body font-normal text-2xl text-center">373</td>
+              <td class="p-12 font-body font-normal text-2xl text-center">10.5</td>
+            </tr>
+            <tr>
+              <td class="p-12 font-body font-extrabold text-2xl text-center border-b">Тюнинг</td>
+              <td class="p-12 font-body font-normal text-2xl text-center border-b">180</td>
+              <td class="p-12 font-body font-normal text-2xl text-center border-b">440</td>
+              <td class="p-12 font-body font-normal text-2xl text-center border-b">9.5</td>
+            </tr>
+            <tr>
+              <td class="p-12 font-body font-extrabold text-2xl text-[#C30003] text-center">Прирост</td>
+              <td class="p-12 font-body font-extrabold text-2xl text-[#C30003] text-center">+44</td>
+              <td class="p-12 font-body font-extrabold text-2xl text-[#C30003] text-center">+67</td>
+              <td class="p-12 font-body font-extrabold text-2xl text-[#C30003] text-center">-1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="amount" class="h-32 bg-[#1E3A8A] flex justify-center items-center">
+        <div class="max-w-7xl w-full flex justify-between items-center">
+          <p class="font-body font-extrabold text-white text-[48px] text-center">Итого: 29 000 ₽</p>
+          <button class="bg-[#FACC15] h-[53%] font-body font-bold text-[#0F172A] text-4xl px-8 py-4 rounded-lg">Записаться</button>
+        </div>
+      </div>
     </div>
-    
+
+    <!-- ПРИМЕРЫ РАБОТ -->
+    <div id="examples" class="flex flex-col items-center gap-8">
+      <p class="font-display text-[#1D4ED8] text-[64px] py-8">Примеры работ</p>
+      <div class="max-w-7xl w-full flex flex-col justify-center ">
+        <div class="w-[70%] flex items-center gap-8">
+          <img src="photos/car1.png">
+          <div>
+            <p class="font-body font-bold text-[#0F172A] text-[40px]">Volkswagen Polo 1.6</p>
+            <p class="font-body font-semibold text-[#8A97A8] text-2xl">Чип-тюнинг Stage 1. Убрали провалы на низах, улучшили отклик газа. Расход в городе не изменился.</p>
+            <p class="font-body font-extrabold text-[#1D4ED8] text-[40px]">+18 л.с. / +25 Н·м</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl w-full flex justify-end">
+        <div class="w-[70%] flex items-center  gap-8">
+          <div>
+            <p class="font-body font-bold text-[#0F172A] text-[40px]">Lada Vesta 1.6</p>
+            <p class="font-body font-semibold text-[#8A97A8] text-2xl">Прошивка под Евро-2 после удаления катализатора. Двигатель задышал, пропали ошибки. </p>
+            <p class="font-body font-extrabold text-[#1D4ED8] text-[40px]">+12 л.с.</p>
+          </div>
+          <img src="photos/car2.png">
+        </div>
+      </div>
+
+      <div class="max-w-7xl w-full mb-24">
+        <div class="w-[70%] flex items-center gap-8">
+          <img src="photos/car3.png">
+          <div>
+            <p class="font-body font-bold text-[#0F172A] text-[40px]">Toyota Land Cruiser 200 4.5D</p>
+            <p class="font-body font-semibold text-[#8A97A8] text-2xl">Чип-тюнинг дизеля. Больше тяги для бездорожья, снижение расхода солярки на трассе.</p>
+            <p class="font-body font-extrabold text-[#1D4ED8] text-[40px]">+50 л.с. / +90 Н·м</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
